@@ -55,6 +55,20 @@
 				this.setWho(newVal);
 			}
 		};
+		
+
+function reflectAttribute(prototype, attributeName, propertyName) {
+Object.defineProperty(prototype, propertyName, {
+get: function() {
+return this.getAttribute(attributeName) || '';
+},
+set: function(value) {
+this.setAttribute(attributeName, value);
+},
+});
+}
+		
+		
 
 		window.FixMe = document.registerElement("fix-me", {prototype: Object.create(proto)});
 		window.ToDo = document.registerElement("to-do", {prototype: Object.create(proto)});
