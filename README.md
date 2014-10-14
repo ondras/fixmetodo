@@ -1,5 +1,7 @@
 # &lt;fix-me&gt; and &lt;to-do&gt;
 
+Web Components you really want to use.
+
 ## Install
 ```
 bower install fixmetodo [--save]
