@@ -1,5 +1,7 @@
 # &lt;fix-me&gt; and &lt;to-do&gt;
 
+Web Components you really want to use.
+
 ## Install
 ```
 bower install fixmetodo [--save]
@@ -25,8 +27,12 @@ bower install fixmetodo [--save]
 <to-do who="(Foo Bar)"></fix-me>
 ```
 
+## Result
+![Screenshot](fixmetodo.png)
+
 ## Example
 http://ondras.github.io/fixmetodo/example.html
+
 
 ## Awesome!
 Built with love (and caribbean rum) by [Ondřej Žára](http://ondras.zarovi.cz/)
