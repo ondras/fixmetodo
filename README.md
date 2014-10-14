@@ -24,3 +24,9 @@ bower install fixmetodo [--save]
 <fix-me who="John Doe"></fix-me>
 <to-do who="(Foo Bar)"></fix-me>
 ```
+
+## Example
+http://ondras.github.io/fixmetodo/example.html
+
+## Awesome!
+Built with love (and caribbean rum) by [Ondřej Žára](http://ondras.zarovi.cz/)
