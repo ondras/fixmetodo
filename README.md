@@ -1,4 +1,4 @@
-# `<fix-me>` and `<to-do>`
+# &lt;fix-me&gt; and &lt;to-do&gt;
 
 ## Install
 ```
