@@ -1,0 +1,62 @@
+<style>
+	fix-me, to-do {
+		font-family: arial;
+		color: #fff;
+		border-radius: 3px;
+		padding: 1px 3px;
+	}
+	
+	fix-me {
+		background-color: #f00;
+	}
+
+	to-do {
+		background-color: #f80;
+	}
+</style>
+
+<template>
+	<content></content>
+</template>
+
+<script>
+	(function() {
+		var doc = (document.currentScript || document._currentScript).ownerDocument;
+		var template = doc.querySelector("template").content;
+
+		var proto = Object.create(HTMLElement.prototype);
+
+		proto.createdCallback = function() {
+			this.innerHTML = this.nodeName.toUpperCase().replace("-", "");
+			return;
+			// Creates the shadow root
+			var shadowRoot = this.createShadowRoot();
+
+			// Adds a template clone into shadow root
+			var clone = thatDoc.importNode(template, true);
+			shadowRoot.appendChild(clone);
+
+			// Caches <strong> DOM query
+			this.strong = shadowRoot.querySelector('strong');
+
+			// Checks if the "who" attribute has been overwritten
+			if (this.hasAttribute('who')) {
+				var who = this.getAttribute('who');
+				this.setWho(who);
+			}
+			else {
+				this.setWho(this.who);
+			}
+		};
+
+		// Fires when an attribute was added, removed, or updated
+		proto.attributeChangedCallback = function(attr, oldVal, newVal) {
+			if (attr === 'who') {
+				this.setWho(newVal);
+			}
+		};
+
+		window.FixMe = document.registerElement("fix-me", {prototype: Object.create(proto)});
+		window.ToDo = document.registerElement("to-do", {prototype: Object.create(proto)});
+	})();
+</script>
