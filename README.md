@@ -24,7 +24,7 @@ bower install fixmetodo [--save]
 
 <!-- very advanced usage -->
 <fix-me who="John Doe"></fix-me>
-<to-do who="(Foo Bar)"></fix-me>
+<to-do who="(Foo Bar)"></to-do>
 ```
 
 ## Result
