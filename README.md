@@ -10,7 +10,8 @@ bower install fixmetodo [--save]
 ## Include
 ```html
 <!-- Web Components polyfills -->
-<script src="//polymer-project.org/platform.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.5.2/webcomponents.min.js
+"></script>
 
 <!-- fix-me and to-do elements -->
 <link rel="import" href="bower_components/fixmetodo/fixmetodo.html" />
