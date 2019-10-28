@@ -1,0 +1,16 @@
+fix-me, to-do {
+	font-family: sans-serif;
+	color: #fff;
+	border-radius: 3px;
+	padding: 2px 4px;
+	font-weight: bold;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+fix-me {
+	background-color: #d00;
+}
+
+to-do {
+	background-color: #e70;
+}

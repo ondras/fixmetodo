@@ -3,18 +3,14 @@
 Web Components you really want to use.
 
 ## Install
-```
-bower install fixmetodo [--save]
+```bash
+npm i @ondras/fixmetodo --registry https://npm.pkg.github.com
 ```
 
 ## Include
 ```html
-<!-- Web Components polyfills -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.5.2/webcomponents.min.js
-"></script>
-
-<!-- fix-me and to-do elements -->
-<link rel="import" href="bower_components/fixmetodo/fixmetodo.html" />
+<link rel="stylesheet" href="node_modules/@ondras/fixmetodo/fixmetodo.css" />
+<script type="module"   src="node_modules/@ondras/fixmetodo/fixmetodo.js"></script>
 ```
 
 ## Use
@@ -32,8 +28,8 @@ bower install fixmetodo [--save]
 ![Screenshot](fixmetodo.png)
 
 ## Example
-http://ondras.github.io/fixmetodo/example.html
+https://ondras.github.io/fixmetodo/
 
 
 ## Awesome!
-Built with love (and caribbean rum) by [Ondřej Žára](http://ondras.zarovi.cz/)
+Built with love (and caribbean rum) by [Ondřej Žára](https://ondras.zarovi.cz/)

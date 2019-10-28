@@ -1,0 +1,18 @@
+{
+  "name": "@ondras/fixmetodo",
+  "version": "1.0.0",
+  "main": "fixmetodo.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ondras/fixmetodo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ondras/fixmetodo/issues"
+  },
+  "homepage": "https://github.com/ondras/fixmetodo#readme",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  }
+}
